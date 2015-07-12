@@ -18,7 +18,6 @@ package LinkdList;
 /**
  *
  * @author tbking
- * 
  */
 
 // this class only exists to show the usage of the LinkdList class
@@ -32,6 +31,9 @@ public class Main {
         System.out.println(list.toString());    // printing the linked list
         list.delete(1);                         // deleting node at index 1
         System.out.println(list.toString());    //printing the linked list
+        list.reverse();                         //reversing the linked list
+        System.out.println(list.toString());    //printing the linked list
+        
     }
 }
 
@@ -40,4 +42,5 @@ output :
 null
 [ c -> string -> 1 ]
 [ c -> 1 ]
+[ 1 -> c ]
 */

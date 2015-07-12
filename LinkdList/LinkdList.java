@@ -21,7 +21,7 @@ package LinkdList;
  */
 public final class LinkdList
 {
-    private Nod head;
+    private Nod head,last;
     //make an ampty linked list
     LinkdList(){}
     
@@ -126,6 +126,27 @@ public final class LinkdList
             temp=temp.next;
         }
         return a;
+    }
+    
+    //to reverse the linked list
+    void reverse()
+    {
+        extract(head);
+        head.next=null;
+        head=last;
+    }
+    //extracts the node start from the linked list and makes it the next node of it's next recursively
+    Nod extract(Nod start)
+    {
+        if(start.next!=null)
+        {
+            
+            return extract(start.next).next=start;
+        }
+        else
+        {
+            return last=start;
+        }
     }
     // toString method
     @Override
