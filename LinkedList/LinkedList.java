@@ -22,15 +22,15 @@ package LinkedList;
 public final class LinkedList
 {
     private Nod head,last;
+    private int capacity=-1;
     //make an ampty linked list
     public LinkedList(){}
     
     // make a linked list with d as head
-    public <T>LinkedList(T d)
+    public LinkedList(int capacity)
     {
-        head=new Nod();
-        head.data= d;
-        head.next=null;
+        if(capacity>0)
+            this.capacity=capacity;
     }
     
     // make a linked list with array arr
@@ -60,6 +60,11 @@ public final class LinkedList
     // insert a node at index
     public <T> void insert(T d,int index)
     {
+        //if capacity is given and the linked list is overflowing, return
+        if(capacity!=-1 && getSize()>=capacity)
+        {
+            return;
+        }
         // if trying to insert a node out of the bounds of the linkedlist, append at the end
         if(index>getSize())
         {

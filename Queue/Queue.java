@@ -24,7 +24,6 @@ import LinkedList.LinkedList;
  * @author tbking
  */
 public class Queue {
-    private int capacity=-1;
     private LinkedList list=null;
     public Queue()
     {
@@ -32,8 +31,7 @@ public class Queue {
     }
     public Queue(int capacity)
     {
-        if(capacity>0)
-            this.capacity=capacity;
+        list=new LinkedList(capacity);
     }
     public <T> Queue(T[] data)
     {

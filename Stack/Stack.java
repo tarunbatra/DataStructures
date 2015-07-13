@@ -27,9 +27,9 @@ public class Stack {
     {
         list=new LinkedList();
     }
-    public <T> Stack(T data)
+    public <T> Stack(int capacity)
     {
-        list=new LinkedList(data);
+        list=new LinkedList(capacity);
     }
     public <T> Stack(T[] data)
     {
