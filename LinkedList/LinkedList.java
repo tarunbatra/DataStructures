@@ -148,6 +148,12 @@ public final class LinkedList
             return last=start;
         }
     }
+    
+    //isEmpty method
+    public boolean isEmpty()
+    {
+        return getSize()==0;
+    }
     // toString method
     @Override
     public String toString()
