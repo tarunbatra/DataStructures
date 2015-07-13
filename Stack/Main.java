@@ -19,7 +19,7 @@ package Stack;
  *
  * @author tbking
  */
-// this class only exists to show the usage of the Stackclass
+// this class only exists to show the usage of the Stack class
 public class Main {
     public static void main(String[] args) {
         Stack stck=new Stack();
@@ -33,7 +33,8 @@ public class Main {
         System.out.println(stck.toString());    //printing the stack
     }
 }
-/* output:
+/*
+output:
 null
 [ string | c | 1 ]
 string
