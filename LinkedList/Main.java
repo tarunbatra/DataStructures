@@ -13,17 +13,17 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package LinkdList;
+package LinkedList;
 
 /**
  *
  * @author tbking
  */
 
-// this class only exists to show the usage of the LinkdList class
+// this class only exists to show the usage of the LinkedList class
 public class Main {
     public static void main(String[] args) throws Exception {
-        LinkdList list=new LinkdList();         // create an empty linked list
+        LinkedList list=new LinkedList();         // create an empty linked list
         System.out.println(list.toString());    // printing empty list
         list.insert(1, 0);                      // inserting an int to linked list
         list.insert('c', 0);                    // inserting a character to linked list

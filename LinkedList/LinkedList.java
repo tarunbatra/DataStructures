@@ -13,20 +13,20 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package LinkdList;
+package LinkedList;
 
 /**
  *
  * @author tbking
  */
-public final class LinkdList
+public final class LinkedList
 {
     private Nod head,last;
     //make an ampty linked list
-    LinkdList(){}
+    LinkedList(){}
     
     // make a linked list with d as head
-    <T>LinkdList(T d)
+    <T>LinkedList(T d)
     {
         head=new Nod();
         head.data= d;
@@ -34,7 +34,7 @@ public final class LinkdList
     }
     
     // make a linked list with array arr
-    <T>LinkdList(T arr[])
+    <T>LinkedList(T arr[])
     {
         head=new Nod();
         Nod temp=head;
