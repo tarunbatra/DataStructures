@@ -41,13 +41,13 @@ public class Queue {
     {
         list.insert(data,list.getSize());
     }
-    public String peek()
+    public <T>T peek()
     {
         return list.getData(0);
     }
-    public String remove()
+    public <T> T remove()
     {
-        String ret=list.getData(0);
+        T ret=list.getData(0);
         list.delete(0);
         return ret;
     }

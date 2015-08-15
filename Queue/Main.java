@@ -28,8 +28,8 @@ public class Main {
         q.add('c');                         // pushing a character to queue
         q.add("string");                    // pushing a string to queue
         System.out.println(q.toString());    // printing the queue
-        System.out.println(q.peek());        // peeking from queue
-        System.out.println(q.remove());         // popping from queue
+        System.out.println(q.peek().toString());        // peeking from queue
+        System.out.println(q.remove().toString());         // popping from queue
         System.out.println(q.toString());    //printing the queue
     }
 }

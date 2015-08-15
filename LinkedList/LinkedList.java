@@ -117,17 +117,17 @@ public final class LinkedList
     }
     
     // return the data stored in the linked list
-    public String getData(int index)
+    public <T> T getData(int index)
     {
         // if trying to get data of a  node out of the bounds of the linked list
         if(index>=getSize())
             return null;
         int pos=0;
         Nod temp=head;
-        String a=temp.data.toString();
+        T a=(T)temp.data;
         while(pos++<=index)
         {
-            a=temp.data.toString();
+            a=(T)temp.data;
             temp=temp.next;
         }
         return a;
